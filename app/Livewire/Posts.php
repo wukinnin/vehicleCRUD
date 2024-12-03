@@ -88,7 +88,7 @@ class Posts extends Component
     public function update()
     {
         $validatedDate = $this->validate([
-            'title' => 'required',
+            'make' => 'required',
             'model' => 'required',
         ]);
 
