@@ -12,20 +12,21 @@
             <span class="text-danger">{{ $message }}</span>
         @enderror
     </div>
-
+    <br>
     <div class="form-group">
         <label for="exampleFormControlInput2">Model:</label>
-        <textarea 
+        <input 
+            type="text" 
             class="form-control" 
             id="exampleFormControlInput2" 
-            wire:model="model" 
-            placeholder="Enter Model"
-        ></textarea>
+            placeholder="Enter Model" 
+            wire:model="model"
+        >
         @error('model') 
             <span class="text-danger">{{ $message }}</span>
         @enderror
     </div>
-
+    <br>
     <button 
         wire:click.prevent="store()" 
         class="btn btn-success"
