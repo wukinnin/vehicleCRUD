@@ -48,7 +48,7 @@ class Posts extends Component
         ]);
 
         Post::create($validatedDate);
-        session()->flash('message', 'Post Created Successfully.');
+        session()->flash('message', 'Vehicle list created successfully.');
         $this->resetInputFields();
     }
 
@@ -101,7 +101,7 @@ class Posts extends Component
         ]);
 
         $this->updateMode = false;
-        session()->flash('message', 'Post Updated Successfully.');
+        session()->flash('message', 'Vehicle list updated successfully.');
         $this->resetInputFields();
     }
 
@@ -114,6 +114,6 @@ class Posts extends Component
     public function delete($id)
     {
         Post::find($id)->delete();
-        session()->flash('message', 'Post Deleted Successfully.');
+        session()->flash('message', 'Vehicle list deleted successfully.');
     }
 }
