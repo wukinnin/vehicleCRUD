@@ -1,6 +1,6 @@
 # Laravel App with Livewire and Bootstrap
 
-![preview](preview.png)
+![preview][preview.gif]
 
 ---
 ## You will need
